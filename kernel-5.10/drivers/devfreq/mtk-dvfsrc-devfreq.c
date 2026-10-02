@@ -34,7 +34,7 @@ static void dvfsrc_set_freq_level(struct dvfsrc_devfreq *dvfsrc,
 {
 	mtk_dvfsrc_send_request(dvfsrc->ctrl_dev,
 		MTK_DVFSRC_CMD_DRAM_REQUEST,
-		level);
+		dvfsrc->freq_count - 1);
 }
 
 static unsigned long dvfsrc_get_cur_freq(struct dvfsrc_devfreq *dvfsrc)
