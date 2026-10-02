@@ -116,7 +116,7 @@
 				compatible = "resource";
 				resource@1 {
 					resource,label = "CPU";
-					resource,value = <1274000 1075200>;
+					resource,value = <1800000 1500000>;
 				};
 
 				resource@2 {
